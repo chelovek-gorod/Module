@@ -38,7 +38,7 @@ function getWeather(city){
     weather.find({search: city, degreeType: 'C'}, function(err, result) {
         if(err) console.log(err);
         outputWeather(result[0].location, result[0].current);
-        //console.log(JSON.stringify(result, null, 2));
+        //console.log(JSON.stringify(result, null, 2)); 
     });
 }
 
